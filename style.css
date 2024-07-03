@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    margin: 30px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+/*-----------------HEADER--------------*/
+
+.headertop-main { 
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+#logoairbnb {
+    height: 40px;
+}
+.headertop-1 {
+    display: flex;
+}
+
+.headertop-1content {
+    margin: 0px 15px;
+}
+
+.headerbot {
+    display: flex;
+    justify-content: center;
+/*    border: solid 2px #E6E3E2;*/
+    margin: 0 250px;
+}
+.btn-left,
+.btn-right {
+    background-color: white;
+    border: solid 2px #E6E3E2;
+    padding: 10px 20px;
+    &:hover {
+        background-color: #E6E3E2;
+    }
+
+}
+
+.btn-right {
+    display: flex;
+    border-radius: 0 30px 30px 0;
+    border-left: none;    
+}
+
+.btn-right p {
+    text-align: left;
+    padding-right: 90px;
+    padding-left: 10px;
+    border-left: solid 2px #E6E3E2;
+}
+
+.btn-right img {
+    height: 10px;
+    justify-self: right;
+    background-color: red;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.btn-left {
+    border-radius: 30px 0 0 30px;
+    border-right: none;
+}
+.btn-left p {
+    text-align: left;
+    padding-right: 90px;
+}
+/*------SEPARATEUR------*/
+.separateur{
+    margin: 20px -30px 0 -30px ;
+    height: 1px;
+}
+/*------MAIN------*/
+/*nav*/
+nav {
+    margin: 20px -30px 0 -30px ;
+    border-top: solid 2px #E6E3E2;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav div img {
+    width: 40px;
+    margin: 0 auto;
+}
+
+/*main*/
+
+main {
+    display: grid;
+    grid-template-columns: 23% 23% 23% 23%;
+    grid-column-gap: 35px;
+    grid-row-gap: 15px;
+    grid-template-rows: 350px 350px;
+    font-size: 14px;
+}
+
+.img-loc {
+    width: 270px;
+    height: 270px;
+    border-radius: 10px;
+}
+.title-loc {
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: -25px;
+}
+
+.title-loc~p{
+    margin: 10px 0;
+}
+
+.logo-loc {
+    position: relative;
+    bottom: 260px;
+    left: 200px;
+    width: 15px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 50%;
+}
+
