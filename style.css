@@ -1,3 +1,4 @@
+/*--style généraux + perfix*/
 *{
     margin: 0;
     padding: 0;
@@ -19,6 +20,8 @@ img {
 .clean {
     list-style-type: none;
 }
+
+
 /*-----------------HEADER--------------*/
 
 .headertop-main { 
@@ -26,9 +29,11 @@ img {
     justify-content: space-between;
     margin-bottom: 30px;
 }
+
 #logoairbnb {
     height: 40px;
 }
+
 .headertop-1 {
     display: flex;
     margin-left: 90px;
@@ -46,9 +51,11 @@ img {
     box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.1), 
                 0 1px 2px 0 rgba(0, 0, 0, 0.08);
 }
+
 .btn-left,
 .btn-right {
     font-size: 14px;
+    text-align: left;
     background-color: white;
     white-space: nowrap;
     border: solid 2px #E6E3E2;
@@ -56,7 +63,6 @@ img {
     &:hover {
         background-color: #E6E3E2;
     }
-
 }
 
 .btn-right {
@@ -64,11 +70,9 @@ img {
     justify-content: space-between;
     border-radius: 0 30px 30px 0;
     border-left: none;
-    text-align: left;
     padding-left: 10px;
     border-left: solid 2px #E6E3E2;
 }
-
 
 .btn-right img {
     height: 10px;
@@ -81,16 +85,19 @@ img {
 .btn-left {
     border-radius: 30px 0 0 30px;
     border-right: none;
-    text-align: left;
     padding-right: 110px;
 }
 
+
 /*------SEPARATEUR------*/
+
 .separateur{
     margin: 30px -30px 20px -30px ;
     height: 1px;
     border-top: solid 2px #E6E3E2;
 }
+
+
 /*------MAIN------*/
 /*nav*/
 nav {
@@ -98,9 +105,11 @@ nav {
     display: flex;
     justify-content: space-around;
 }
+
 .nav-icon-container{
     display: grid;
 }
+
 nav div img {
     width: 40px;
     justify-self: center;
@@ -111,10 +120,9 @@ nav div img {
 main {
     display: grid;
     grid-template-columns: 23% 23% 23% 23%;
-    grid-column-gap: 35px;
-    grid-row-gap: 35px;
     grid-template-rows: 365px 365px;
     font-size: 14px;
+    grid-gap: 35px;
 }
 
 .img-loc {
@@ -122,11 +130,12 @@ main {
     height: 282px;
     border-radius: 10px;
 }
+
 .title-loc {
     font-size: 14px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    white-space: nowrap;/*annule le retour a la ligne*/
+    overflow: hidden;/*masque le texte qui depase de la box*/
+    text-overflow: ellipsis;/*affiche ... si texte effacé*/
     margin-top: -25px;
 }
 
@@ -148,6 +157,7 @@ main {
     border-radius: 50%;
 }
 
+
 /*------FOOTER------*/
 footer {
     background-color: #f7f7f7;
@@ -155,9 +165,11 @@ footer {
     display: flex;
     justify-content: space-between;
 }
+
 footer ul {
     display: flex;
 }
+
 li {
     margin: 0 30px 0 0;
 }
